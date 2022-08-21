@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <section class="flex weather">
+        <!-- Current -->
+        <div class="current-weather text-center">
+            <!-- Country and Date -->
+            <div class="date">
+                <h2 class="section-title section-title-date">
+                    Belegrade
+                </h2>
+                <p class="date-day" id="date">Monday, 17 January</p>
+            </div>
+
+            <div class="info">
+                <!-- Temperature -->
+                <h2 class="section-title">Temperature</h2>
+                <p class="reading temp">5°C</p>
+                <img class="icon" src="img/cloud.png" id="img1">
+                <p class="reading high-temp">High: 10°C</p>
+                <p class="reading low-temp">Low: 1°C</p>
+
+                <!-- Humidity -->
+                <div class="line"></div>
+                <p class="reading humidity">Humidity: 70%</p>
+                <p class="reading uvi">UV: 1.88</p>
+
+                <!-- Wind -->
+                <div class="wind"></div>
+            </div>
+
+            <!-- C to K -->
+            <div class="unit">
+                <label for="cel">°C</label>
+                <input type="radio" id="cel" name="unit" checked>
+                <button class="unit-toggle"></button>
+                <label for="kel">K</label>
+                <input type="radio" id="kel" name="unit">
+            </div>
+        </div>
+
+        <!-- Days -->
+        <div>
+            <div class="days-weather">
+                <h2 class="main-title days-title">Forecast for 8 days</h2>
+                <div class="days"></div>
+            </div>
+            <!-- News -->
+            <div class="news">
+                <h2 class="main-title">Forecast News</h2>
+                <div class="news-box">
+                    <div class="new">
+                        <p class="reading">Strong Winds Topple Truck on Highway!!!</p>
+                        <img src="img/news1.jpg" alt=""><br>
+                        <a href="">See More <i class="fas fa-angle-double-right"></i></a>
+                    </div>
+                    <div class="new">
+                        <p class="reading">Strong Winds Topple Truck on Highway!!!</p>
+                        <img src="img/news1.jpg" alt=""><br>
+                        <a href="">See More <i class="fas fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script/script.js" defer></script>
+</body>
+
+</html>
